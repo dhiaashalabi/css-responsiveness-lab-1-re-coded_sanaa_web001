@@ -1,0 +1,86 @@
+body {
+  margin: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.column {
+  background-color: #aaa;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.column:hover {
+  opacity: 0.8;
+}
+
+h4 {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+.img1 {
+  background-image: url("https://www.w3schools.com/w3images/paris.jpg");
+}
+.img2 {
+  background-image: url("https://www.w3schools.com/w3images/newyork.jpg");
+}
+
+.img3 {
+  background-image: url("https://www.w3schools.com/w3images/sanfran.jpg");
+}
+
+.img4 {
+  background-image: url("https://www.w3schools.com/w3images/paris.jpg");
+}
+
+.img5 {
+  background-image: url("https://www.w3schools.com/w3images/newyork.jpg");
+}
+
+.img6 {
+  background-image: url("https://www.w3schools.com/w3images/sanfran.jpg");
+}
+
+.img7 {
+  background-image: url("https://www.w3schools.com/w3images/paris.jpg");
+}
+
+.img8 {
+  background-image: url("https://www.w3schools.com/w3images/newyork.jpg");
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .column {
+    padding: 0;
+  }
+}
